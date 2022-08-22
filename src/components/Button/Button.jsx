@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import s from './Button.module.css';
 
 const Button = ({ onClick, text, disabled }) => {
@@ -11,6 +13,12 @@ const Button = ({ onClick, text, disabled }) => {
       {text}
     </button>
   );
+};
+
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  text: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
 };
 
 export { Button };

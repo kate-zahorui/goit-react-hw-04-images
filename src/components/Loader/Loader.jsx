@@ -1,5 +1,4 @@
 import { Oval } from 'react-loader-spinner';
-// import 'Grid.css';
 
 import s from './Loader.module.css';
 
